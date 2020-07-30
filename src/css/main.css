@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root{
+    --Pale_Blue: hsl(243, 100%, 93%);
+    --Grayish_Blue: hsl(229, 7%, 55%);
+    --Dark_Blue: hsl(228, 56%, 26%);
+    --Very_Dark_Blue: hsl(229, 57%, 11%);
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url('../images/bg-mobile.png');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, ul, li, body{
+    margin: 0;
+    padding: 0;
+}
