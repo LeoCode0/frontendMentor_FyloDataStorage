@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, ul, li, body{
     opacity: 0.5;
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1024px){
     body{
         background-color: var(--Very_Dark_Blue);
         background-image: url(../images/bg-desktop.png);
