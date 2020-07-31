@@ -149,3 +149,60 @@ h1, h2, h3, h4, h5, ul, li, body{
     font-weight:700;
     opacity: 0.5;
 }
+
+@media screen and (min-width: 1440px){
+    body{
+        background-color: var(--Very_Dark_Blue);
+        background-image: url(../images/bg-desktop.png);
+        background-position: bottom;
+        background-size: contain;
+    }
+    .main{
+        flex-direction: row;
+    }
+    .main__storage{
+        height: 30%;
+        width: 27%;
+        padding: 3% 0 3% 3%;
+        margin: 0 40px 80px 0;
+    }
+    .main__graphic{
+        padding: 30px 0 30px 45px;
+        padding-top: 30px;
+        width: 40%;
+        height: 20%;
+        align-items: flex-start;
+    }
+
+    .main__graphic-contain{
+        width: 93%;
+    }
+
+    .main__stats{
+        bottom: 0;
+        top: -30%;
+        right: 40px;
+        width: 30%;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    .triangle{
+        position: absolute;
+        border-right: 44px solid transparent;
+        border-bottom: 45px solid white;
+        border-left: 0px solid transparent;
+        border-radius: 90px;
+        transform: rotate(180deg);
+        right: 40px;
+        top: -4px;
+    }
+
+    .main__storage--options{
+        justify-content: start;        
+    }
+    
+    .main__storage--options img{
+        margin-right: 20px;
+    }
+}
