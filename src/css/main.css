@@ -9,7 +9,12 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    width: 100vw;
     background-image: url('../images/bg-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 *{
@@ -19,4 +24,128 @@ body{
 h1, h2, h3, h4, h5, ul, li, body{
     margin: 0;
     padding: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main__storage{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Dark_Blue);
+    height: 230px;
+    width: 90%;
+    border-radius: 5px 40% 5px 5px;
+    padding: 10%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.main__storage--logo{
+    width: 50%;
+}
+
+.main__storage--options{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__storage--options img{
+    padding: 10px;
+    background-color: var(--Very_Dark_Blue);
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.main__graphic{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--Dark_Blue);
+    width: 90%;
+    border-radius: 5px;
+    color: var(--Pale_Blue);
+    align-items: center;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.main__graphic--info span{
+    font-weight: 700;
+}
+
+.main__graphic-contain{
+    width: 80%;
+}
+
+.bar{
+    padding: 4px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: var(--Very_Dark_Blue);
+}
+
+.bar__usage{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 81.5%;
+    height: 12px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.bar__controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bar__controls--start, .bar__controls--end{
+    padding: 8px;
+}
+
+.bar__usage--end{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+}
+
+.main__stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -30%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    height: 80px;
+    color: var(--Dark_Blue);
+    border-radius: 10px;
+}
+
+.main__stats--value{
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.main__stats--description{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:700;
+    opacity: 0.5;
 }
